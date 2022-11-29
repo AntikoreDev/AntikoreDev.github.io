@@ -1,9 +1,69 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hola mundo 2</title>
-  </head>
-  <body>
-    <h1>Hola, mundo!</h1>
-  </body>
+
+<!-- Main Website Content -->
+<html lang="en-US">
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<title>AntikoreDev</title>
+		<link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+		<meta charset="utf-8">
+	</head>
+	<script>
+	
+		const interval = setInterval(changeTitle, 800);
+		const fontList = [
+			"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+			"Georgia, 'Times New Roman', Times, serif",
+			"'Times New Roman', Times, serif",
+			"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif",
+		];
+
+		let iterator = 0;
+		function changeTitle(){
+			
+			const title = document.getElementById("title");
+
+			iterator++;
+			if (iterator > 8){
+				title.style.fontFamily = fontList[0];
+				clearInterval(interval);
+				return; 
+			}
+
+			
+			title.style.fontFamily = fontList[iterator % (fontList.length)];
+
+			console.log(iterator % (fontList.length));
+			
+			
+		}
+	</script>
+	<body>
+		<div class="main">
+			<h1 class="title" id="title">AntikoreDev</h1>
+			<div class="social-media">
+				<a href="https://www.github.com/AntikoreDev"><img src="./img/github.png" alt="Github Profile"></a>
+				<a href="https://www.twitter.com/AntikoreHD"><img src="./img/twitter.png" alt="Twitter Profile"></a>
+				<a href="https://discord.com/"><img src="./img/discord.png" alt="Discord Server"></a>
+			</div>
+			<div class="section-about-me">
+				<h1 class="title-second">About Me</h1>
+				<hr>
+				<p class="textbox">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam alias, voluptates optio quos odit facere recusandae nam natus vel? Possimus autem officia sequi veniam assumenda praesentium quos, laudantium placeat earum.</p>
+			</div>
+			<div class="section-projects">
+				<h1 class="title-second">Projects</h1>
+				<hr>
+				<p class="textbox">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure dolor, sequi adipisci, facere voluptas voluptatem perferendis error magnam enim minima animi et quas illo aperiam maxime officiis dignissimos nisi. Nihil!</p>
+			</div>
+			<div class="section-contact-me">
+				<h1 class="title-second">Contact Me</h1>
+				<hr>
+				<p class="textbox">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque odio error voluptate, voluptas, nulla illo commodi minus id vitae iste tempora doloremque, enim quas cum illum harum facilis facere. Odit?</p>
+			</div>
+			<div class="footer">
+				<p class="copy">© Antikore 2022</p></p><p class="copy epitaph">I'm just a read-only memory</p>
+			</div>
+		</div>
+	</body>
 </html>

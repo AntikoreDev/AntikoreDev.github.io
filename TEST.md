@@ -1,2 +1,0 @@
-# AntikoreDev.github.io
-Test
