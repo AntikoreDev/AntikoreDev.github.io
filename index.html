@@ -9,7 +9,6 @@
 		<meta charset="utf-8">
 	</head>
 	<script>
-	
 		const interval = setInterval(changeTitle, 800);
 		const fontList = [
 			"'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
@@ -20,9 +19,8 @@
 
 		let iterator = 0;
 		function changeTitle(){
-			
 			const title = document.getElementById("title");
-
+			
 			iterator++;
 			if (iterator > 4){
 				title.style.fontFamily = fontList[0];
@@ -30,12 +28,7 @@
 				return; 
 			}
 
-			
 			title.style.fontFamily = fontList[iterator % (fontList.length)];
-
-			console.log(iterator % (fontList.length));
-			
-			
 		}
 	</script>
 	<body>
