@@ -15,7 +15,7 @@
             ];
             
             if (allowedGames.includes(game))
-                window.location.href = `steam://joinlobby/${game}/${room}/${user}`;
+                window.location = `steam://joinlobby/${game}/${room}/${user}`;
             else   
                 window.location = `https://antikore.dev/`
         </script>
