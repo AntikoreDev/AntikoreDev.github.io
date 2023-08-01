@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Invite Link</title>
+    <script>
+        params = new URLSearchParams(window.location.search);
+        
+        user = params.get('user');
+        lobby = params.get('room');
+        game = params.get('game');
+
+        const allowedGames = [
+            '2534880', '2334670'
+        ];
+        
+        if (allowedGames.includes(game))
+            window.location = `steam://joinlobby/${game}/${room}/${user}`;
+        else   
+            window.location  = `https://antikore.dev/`
+    </script>
+</head>
+<body>
+    <p>Oops! We couldn't handle your request</p>
+</body>
+</html>
