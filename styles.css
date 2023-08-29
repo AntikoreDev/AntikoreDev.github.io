@@ -1,79 +1,81 @@
-* {
-	box-sizing: content-box;
-	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	margin: 0;
-	margin-top: 16px;
-	margin-bottom: 16px;
-	filter: drop-shadow(0px 0px 8px rgba(8, 8, 12, 0.5));
+/* FONTS */
+@font-face {
+    font-family: 'pixeloid sans'; /* Font by GGBot, thanks ^^ */
+    src: url('fonts/PixeloidSans.ttf') format('tff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-
-html {
-	margin: 0px;
-	padding: 0px;
+/* STYLES */
+body, html {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    display: contents;
+    justify-content: center;
+    align-items: start;
 }
 
-body {
-	filter: none;
-	margin: 0 auto;
-	padding: 0px;
-	width: 100%;
-	height: 100%;
-	background-color: rgb(16, 16, 24);
-	color: whitesmoke;
+p {
+    font-family: 'pixeloid sans';
+    color: gray;
+    margin: 4px;
 }
 
-hr {
-	width: 64px;
-	margin: 0 auto;
+img {
+    image-rendering: pixelated;
 }
 
-.main {
-	filter: none;
-	padding: 0;
-	position: relative;
-	top: 128px;
-	margin: 0 auto;
-	text-align: center;
-	background-color: rgb(16, 16, 24);
+.dev-info {
+    margin-top: 16px;
+    text-align: center;
 }
 
-.title {
-	padding: auto;
-	font-size: 120px;
+.dev-info p {
+    color: white;
 }
 
-.social-media img {
-	width: 48px;
-	height: 48px;
-	margin: 0 12px;
-
+.web-info {
+    margin-top: 16px;
+    text-align: center;
 }
 
-.footer {
-	margin-top: 128px;
-	width: 100%;
-	height: 128px;
+.user-link, .user-link:visited {
+    color: aqua;
+    transition-duration: 0.2s;
+    text-decoration: underline;
 }
 
-.copy {
-	margin: auto;
-	text-align: center;
-	font-size: medium;
+.user-link:hover {
+    color: yellow;
+    transition-duration: 0.2s;
+}
+  
+.header-title-img {
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
-.title-second {
-	margin-top: 64px;
-	font-size: 36px;
+.header-title-img img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
-.textbox {
-	width: 512px;
-	margin: 0 auto;
-	margin-top: 12px;
-	font-size: large;
+.social-links {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    
+
+    margin: 0 auto;
 }
 
-.epitaph {
-	font-style: italic;
+.social-links img {
+    width: 48px;
+    height: 48px;
+    display: inline;
+  
+    margin-top: 24px;
 }
