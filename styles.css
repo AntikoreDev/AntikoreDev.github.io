@@ -1,7 +1,7 @@
 /* FONTS */
 @font-face {
     font-family: 'pixeloid sans'; /* Font by GGBot, thanks ^^ */
-    src: url('../AntikoreDev.github.io/fonts/PixeloidSans.tff') format('tff');
+    src: url('AntikoreDev.github.io/fonts/PixeloidSans.tff') format('tff');
     font-weight: normal;
     font-style: normal;
 }
