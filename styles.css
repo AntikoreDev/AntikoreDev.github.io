@@ -1,7 +1,7 @@
 /* FONTS */
 @font-face {
     font-family: 'pixeloid sans'; /* Font by GGBot, thanks ^^ */
-    src: url('./fonts/PixeloidSans.ttf') format('tff');
+    src: url('https://www.antikore.dev/fonts/PixeloidSans.tff') format('tff');
     font-weight: normal;
     font-style: normal;
 }
@@ -17,7 +17,7 @@ body, html {
 }
 
 p {
-    font-family: 'pixeloid sans';
+    font-family: 'pixeloid sans', Tahoma;
     color: gray;
     margin: 4px;
 }
